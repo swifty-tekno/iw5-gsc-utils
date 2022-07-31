@@ -44,9 +44,9 @@ This plugin adds some useful functions/methods to IW5's GSC VM
   }
   ```
 # Player
-* `say(message)`: Prints a message to all players' chat.
+* `say_raw(message)`: Prints a message to all players' chat.
 
-* `self tell(message)`: Prints a message to the player's chat.
+* `self tell_raw(message)`: Prints a message to the player's chat.
 * `self setName(name)`: Sets a player's name.
 * `self resetName(name)`: Resets a player's name to its original.
 * `self setClantag(name)`: Sets a player's clantag.
