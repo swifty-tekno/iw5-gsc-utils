@@ -379,7 +379,7 @@ namespace gsc
 				return {};
 			});
 
-			function::add("say", [](const function_args& args) -> scripting::script_value
+			function::add("say_raw", [](const function_args& args) -> scripting::script_value
 			{
 				const auto message = args[0].as<std::string>();
 				game::SV_GameSendServerCommand(-1, 0, utils::string::va("%c \"%s\"", 84, message.data()));
@@ -401,7 +401,7 @@ namespace gsc
 				return {};
 			});
 
-			method::add("tell", [](const game::scr_entref_t ent, const function_args& args) -> scripting::script_value
+			method::add("tell_raw", [](const game::scr_entref_t ent, const function_args& args) -> scripting::script_value
 			{
 				if (ent.classnum != 0)
 				{
